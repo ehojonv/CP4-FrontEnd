@@ -157,5 +157,20 @@ main {
 
 #listaTarefas {
     list-style: none;
-    width: ;
+    margin-top: 1em;
+}
+
+.tarefa {
+    display: flex;
+    align-items: center;
+    background-color: var(--branco);
+    padding: 1em;
+    border-radius: 2em;
+    border: 3px solid var(--preto);
+}
+
+.tarefa button {
+    background-color: var(--branco);
+    border: none;
+    margin-right: 1em;
 }
