@@ -5,6 +5,7 @@
     --azul-medio: #3a7f80;
     --azul-claro: #1e628e;
     --azul-sombra: #0c2c36;
+    --branco: #e7e7e7;
 
     font-family: Roboto, sans-serif;
 }
@@ -45,5 +46,116 @@ main {
     width: 80%;
     background-color: var(--azul-medio);
     border: 2px solid var(--azul-escuro);
-    padding: 3em;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+#formAddTarefa {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    background-color: var(--branco);
+    border-radius: 2em;
+}
+
+#formAddTarefa label {
+    font-weight: bolder;
+}
+
+#containerInput {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    width: 70%;
+}
+
+#inputTarefa {
+    padding: 0.5em;
+    border-radius: 3em;
+    margin-top: 0.5em;
+    border: 2px solid var(--azul-sombra);
+}
+
+#containerBtnAdd {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#containerBtnAdd button {
+    padding: 0.5em 2em;
+    border-radius: 1em;
+    background-color: var(--azul-medio);
+    color: var(--branco);
+    font-weight: bold;
+    border: 2px solid var(--azul-sombra);
+    font-size: 1em;
+}
+
+#containerBtnAdd button:hover {
+    background-color: var(--azul-padrao);
+    color: var(--preto);
+    cursor: pointer;
+}
+
+#containerBtnAdd button:active {
+    border: var(--branco);
+}
+
+#areaTarefas {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+    border-top: 5px solid var(--azul-sombra);
+    padding-top: 3em;
+}
+
+#cabecalhoListaTarefas {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#tituloCabecalho {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+#tituloCabecalho h4 {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+#containerBtnFiltro {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#containerBtnFiltro button {
+    padding: 0.5em 2em;
+    border-radius: 2em;
+    background-color: var(--azul-padrao);
+    border: none;
+    font-size: 0.8em;
+}
+
+#containerBtnFiltro button:hover {
+    border: 2px solid var(--preto);
+}
+
+#containerBtnFiltro button:active {
+    background-color: var(--azul-claro);
+}
+
+#listaTarefas {
+    list-style: none;
+    width: ;
 }
