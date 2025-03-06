@@ -167,10 +167,20 @@ main {
     padding: 1em;
     border-radius: 2em;
     border: 3px solid var(--preto);
+    margin-bottom: 1em;
 }
 
 .tarefa button {
     background-color: var(--branco);
     border: none;
     margin-right: 1em;
+}
+
+.mensagem_vazia {  
+    display: flex;
+    justify-content: center;
+    background-color: var(--branco);
+    padding: 1em;
+    border-radius: 2em;
+    border: 3px solid var(--preto);
 }
