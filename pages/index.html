@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lista de Tarefas</title>
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <h1>Lista de Tarefas</h1>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap" rel="stylesheet">
+</head>
 
-    <main>
-      <div>
-        <input
-          type="text"
-          id="entradaTarefa"
-          placeholder="Adicione uma tarefa..."
-        />
+<body>
+  <header>
+    <img id="imgLogo" src="../img/logo-liston.png" alt="logo liston">
+    <h3 id="subtituloLogo">Sua lista online de a fazeres!</h3>
+  </header>
+
+  <main>
+    <form id="formAddTarefa">
+      <div id="containerInput">
+        <input type="text" id="entradaTarefa" placeholder="Adicione uma tarefa..." />
+      </div>
+      <div id="containerBtnAdd">
         <button onclick="adicionarTarefa()">Adicionar</button>
       </div>
+    </form>
 
+    <div id="areaTarefas">
+      <div id="containerTituloTarefas">
+        <h4>Tarefas:</h4>
+      </div>
+      <div id="containerBtnFiltro">
+
+      </div>
       <ul id="listaTarefas">
         <li>Exemplo de Tarefa</li>
       </ul>
-    </main>
-  </body>
+    </div>
+
+  </main>
+</body>
+
 </html>
